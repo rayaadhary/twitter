@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#b2c7d3] dark:bg-slate-800">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-center h-screen">
+        <div class="flex flex-col">
+          <button id="toggle" class="flex justify-end mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+          </button>
+          <div class="bg-white w-[600px] h-[228px] rounded-lg drop-shadow-2xl dark:bg-slate-700">
+            <div class="flex p-8 flex-col">
+              <div class="mb-4 flex justify-between">
+                <div class="flex">
+                  <div class="p-7 rounded-full bg-blue-600 mr-5"></div>
+                  <div class="flex-col">
+                    <div class="font-bold text-lg dark:text-white">John Doe</div>
+                    <div class="opacity-60 text-base dark:text-white">@realjohndoe</div>
+                  </div>
+                </div>
+                <img class="" src="icons/twitter.svg" alt="" srcset="" />
+              </div>
+              <div class="mb-4 text-base leading-7 dark:text-white">
+                Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'?
+                <span class="text-blue-400">#programming #coding #debugging</span>
+              </div>
+              <div class="flex">
+                <img src="../icons/heart.svg" alt="" srcset="" class="stroke-white opacity-60" /><span class="dark:text-white opacity-60 font-semibold text-base ml-2.5">650</span>
+                <span class="ml-5 dark:text-white opacity-60 font-semibold text-base">3:40 PM - Feb 24, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector('#toggle').addEventListener('click', function () {
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
